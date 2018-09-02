@@ -32,27 +32,28 @@ Number of Backers: These are number of people who have supported the project by 
 3. Random Forest
 
 ## Best model 
-Best Accuracy: 68.9 %
-Best Model: XGBoost
-Key Drivers (top 15):
+**Best Accuracy**: 68.9 %
 
-|features	| XGB_imp       |
-| ------------- | ------------- |
-|	duration|	0.111218|   %duration is the difference between deadline and launch date
-|  participants	|       0.091028| %number of projects launched in the same year-quarter with the same goal bucket in the same category
-	avg_success_rate	0.084386 %probability of success of project on the basis of pledge (pledge per backer) and goal amount of similar projects in the project year
-	launched_month	0.075908
-	avg_ppb	0.070271 #average pledge per backer of similar projects (same category) in the given year
-	launched_quarter	0.063191
-	goal	0.060700
-	usd_goal_real	0.056942
-	launched_year	0.044968
-	goal_cat_perc	0.038937 %percentile bucket of goal
-	currency_USD	0.035004
-	currency_GBP	0.009265
-	main_category_Film_and_Video	0.007648
-	country_US	0.007604
-	main_category_Technology	0.005463
+**Best Model**: XGBoost
+
+**Key Drivers (top 15)**:
+
+The below list has the top 15 features the corresponding importance from XGBoost 
+1. duration-0.111218   %duration is the difference between deadline and launch date
+2. participants-0.091028 %number of projects launched in the same year-quarter with the same goal bucket in the same category
+3. avg_success_rate-0.084386 %probability of success of project on the basis of pledge (pledge per backer) and goal amount of similar projects in the project year
+4. launched_month-0.075908
+5. avg_ppb-0.070271 #average pledge per backer of similar projects (same category) in the given year
+6. launched_quarter-0.063191
+7. goal-0.060700
+8. usd_goal_real-0.056942
+9. launched_year-0.044968
+10. goal_cat_perc-0.038937 %percentile bucket of goal
+11. currency_USD-0.035004
+12. currency_GBP-0.009265
+13. main_category_Film_and_Video-0.007648
+14. country_US-0.007604
+15. main_category_Technology-0.005463
 
 
 The Kaggle kernel for the same can be found [here](https://www.kaggle.com/srishti280992/data-preprocessing-feature-engg-prediction)
