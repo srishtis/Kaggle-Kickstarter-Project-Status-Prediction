@@ -35,9 +35,11 @@ Number of Backers: These are number of people who have supported the project by 
 Best Accuracy: 68.9 %
 Best Model: XGBoost
 Key Drivers (top 15):
-features	XGB_imp
-	duration	0.111218   %duration is the difference between deadline and launch date
-	participants	0.091028 %number of projects launched in the same year-quarter with the same goal bucket in the same category
+
+|features	| XGB_imp       |
+| ------------- | ------------- |
+|	duration|	0.111218|   %duration is the difference between deadline and launch date
+|  participants	|       0.091028| %number of projects launched in the same year-quarter with the same goal bucket in the same category
 	avg_success_rate	0.084386 %probability of success of project on the basis of pledge (pledge per backer) and goal amount of similar projects in the project year
 	launched_month	0.075908
 	avg_ppb	0.070271 #average pledge per backer of similar projects (same category) in the given year
