@@ -51,3 +51,6 @@ features	XGB_imp
 	main_category_Film_and_Video	0.007648
 	country_US	0.007604
 	main_category_Technology	0.005463
+
+
+The Kaggle kernel for the same can be found here [a link](https://www.kaggle.com/srishti280992/data-preprocessing-feature-engg-prediction)
