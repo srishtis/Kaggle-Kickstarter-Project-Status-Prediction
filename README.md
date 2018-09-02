@@ -53,4 +53,4 @@ features	XGB_imp
 	main_category_Technology	0.005463
 
 
-The Kaggle kernel for the same can be found here [a link](https://www.kaggle.com/srishti280992/data-preprocessing-feature-engg-prediction)
+The Kaggle kernel for the same can be found [here](https://www.kaggle.com/srishti280992/data-preprocessing-feature-engg-prediction)
