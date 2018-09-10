@@ -88,8 +88,11 @@ Although I tried ensembling models in the second iteration using a normal averag
 
 #### Feature Engineering
 Create features around number of projects in the same category in the same month
+
 Create features around number of projects in the same category in the same week
+
 Create features on the average success rate of similar category projects with simlar duration
+
 Create features on the mean/ median goal amount of projects with similar category and similar duration
 
 #### Hyperparameters optimization of the XGBoost algorithm
