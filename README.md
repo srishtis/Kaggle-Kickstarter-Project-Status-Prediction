@@ -76,8 +76,9 @@ The below list has the top 15 features the corresponding importance from XGBoost
 15.	Goal_1000	0.018772 %goal divided by 1000 to classify the ranges
 
 ## Contents of the repository
-The [file](https://github.com/srishtis/Kaggle-Kickstarter-Project-Status-Prediction/blob/master/kickstarter_project_predictions_%20final_version_0109.ipynb) contains the first iteration with best accuracy of 68.9%.
-The [file](https://github.com/srishtis/Kaggle-Kickstarter-Project-Status-Prediction/blob/master/kernel.ipynb) contains the second iteration with best accuracy of 69.2%
+The [file](https://github.com/srishtis/Kaggle-Kickstarter-Project-Status-Prediction/blob/master/kickstarter_project_predictions_%20final_version_0109.ipynb) 'kickstarter_project_predictions_final_version_0109.ipynb' contains the first iteration with best accuracy of 68.9%.
+
+The [file](https://github.com/srishtis/Kaggle-Kickstarter-Project-Status-Prediction/blob/master/kernel.ipynb) 'Kernel.ipynb' contains the second iteration with best accuracy of 69.2%
 
 ### What are the additional steps followed in the second iteration?
 I have created additional features using the name of the project and the goal amount. The features have been explained in the notebook itself.
