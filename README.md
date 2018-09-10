@@ -32,8 +32,9 @@ Number of Backers: These are number of people who have supported the project by 
 3. Random Forest
 
 ## Best model 
-### **Best Accuracy**: first iteration: 68.9 %
-###                    second iteration: 69.2 %
+### **Best Accuracy**: 
+#### first iteration: 68.9 %
+#### second iteration: 69.2 %
 
 **Best Model**: XGBoost
 
