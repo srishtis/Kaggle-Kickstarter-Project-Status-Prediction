@@ -121,5 +121,7 @@ This brings the current accuracy to 70.3%
 
 ## Links
 The Kaggle kernel for the first iteration can be found [here](https://www.kaggle.com/srishti280992/data-preprocessing-feature-engg-prediction)
+
 The Kaggle kernel for the second iteration is [here](https://www.kaggle.com/srishti280992/xgboost-classifier-69-2-feature-engg-eda)
-THe Kaggle kernel for the third iteration is [here](https://www.kaggle.com/srishti280992/kickstarter-project-classification-lgbm-70-3) 
+
+The Kaggle kernel for the third iteration is [here](https://www.kaggle.com/srishti280992/kickstarter-project-classification-lgbm-70-3) 
