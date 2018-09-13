@@ -35,8 +35,10 @@ Number of Backers: These are number of people who have supported the project by 
 ### **Best Accuracy**: 
 #### first iteration: 68.9 %
 #### second iteration: 69.2 %
+#### third iteration: 70.3%
 
-**Best Model**: XGBoost
+**Best Model**: 1st and 2nd runs: XGBoost
+3rd run: LGBM
 
 **Key Drivers (top 15)**:
 
@@ -75,36 +77,45 @@ The below list has the top 15 features the corresponding importance from XGBoost
 14.	goal_cat_perc	0.023880
 15.	Goal_1000	0.018772 %goal divided by 1000 to classify the ranges
 
+
+The below list has the top 15 features the corresponding importance from LGBM (**third Iteration**)
+1.  category	14303
+2.	duration	6007
+3.	usd_goal_real	4823
+4.	avg_success_rate_goal	3516 %average success rate based on goal of the project
+4.	country	2766
+6.	launched_year	2694
+7.  name_len	2489
+8.	name_words	2160
+9.	goal	2118
+10.	avg_success_rate_duration	1864 %average success rate based on duration of the project
+11.	launched_week	1857
+12.	participants_qtr	1677
+13.	avg_ppb_goal	1430
+14.	main_category	1053
+15.	participants_mth	965 % number of participants of same category in the month
+
 ## Contents of the repository
 The [file](https://github.com/srishtis/Kaggle-Kickstarter-Project-Status-Prediction/blob/master/kickstarter_project_predictions_%20final_version_0109.ipynb) 'kickstarter_project_predictions_final_version_0109.ipynb' contains the first iteration with best accuracy of 68.9%.
 
 The [file](https://github.com/srishtis/Kaggle-Kickstarter-Project-Status-Prediction/blob/master/kernel.ipynb) 'Kernel.ipynb' contains the second iteration with best accuracy of 69.2%
 
+The [file](https://github.com/srishtis/Kaggle-Kickstarter-Project-Status-Prediction/blob/master/kickstarter_final_run_lgbm703.ipynb) 'kickstarter_final_run_lgbm703.ipynb' contains the third iteration with best accuracy of 70.3% by Light GBM model
+
 ### What are the additional steps followed in the second iteration?
 I have created additional features using the name of the project and the goal amount. The features have been explained in the notebook itself.
 Although I tried ensembling models in the second iteration using a normal averaging approach and boosting(AdaBoosting), there was no improvement in the performance.
 
-### What could be the probable next steps?
+### What are the additional steps followed in the third iteration?
+Additional features were created around duration and number of participants. These features only improved the accuracy by 0.3% to 69.5%.
+I tried to execute the Randomized Grid Sarch on XGBoost but stopped it due to the run time. I tried tweaking parameters (learning_rate, n_estimators and max_depth) manually but it did not make anychange to the model performance
+I then executed the LGBM in 2 different ways:
+A. LGBM with one-hot encoded categorical features
+B. LGBM with categorical features (category, main_category, currency, country) converted to integer value category-type columns and fed to the LGBM model using the 'categorical_feature' argument in the 'fit' function
 
-#### Feature Engineering
-Create features around number of projects in the same category in the same month
-
-Create features around number of projects in the same category in the same week
-
-Create features on the average success rate of similar category projects with simlar duration
-
-Create features on the mean/ median goal amount of projects with similar category and similar duration
-
-#### Hyperparameters optimization of the XGBoost algorithm
-Try different combinations of the learning_rate and number of trees parameters
-
-#### Explore light GBM
-Implement light GBM to see if it performs better than XGBoost
-Expected improvements:
-1. faster execution than XGBoost
-2. improved accuracy due to the leaf-wise split (instead of level wise split- this should improve the amount by which the log loss reduces)
-
+This brings the current accuracy to 70.3%
 
 ## Links
 The Kaggle kernel for the first iteration can be found [here](https://www.kaggle.com/srishti280992/data-preprocessing-feature-engg-prediction)
 The Kaggle kernel for the second iteration is [here](https://www.kaggle.com/srishti280992/xgboost-classifier-69-2-feature-engg-eda)
+THe Kaggle kernel for the third iteration is [here](https://www.kaggle.com/srishti280992/kickstarter-project-classification-lgbm-70-3) 
