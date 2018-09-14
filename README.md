@@ -79,21 +79,21 @@ The below list has the top 15 features the corresponding importance from XGBoost
 
 
 The below list has the top 15 features the corresponding importance from LGBM (**third Iteration**)
-1.  category	14303
-2.	duration	6007
-3.	usd_goal_real	4823
-4.	avg_success_rate_goal	3516 %average success rate based on goal of the project
-4.	country	2766
-6.	launched_year	2694
-7.  name_len	2489
-8.	name_words	2160
-9.	goal	2118
-10.	avg_success_rate_duration	1864 %average success rate based on duration of the project
-11.	launched_week	1857
-12.	participants_qtr	1677
-13.	avg_ppb_goal	1430
-14.	main_category	1053
-15.	participants_mth	965 % number of participants of same category in the month
+1.  category	554198.777930
+2.	avg_success_rate_goal	524201.986343
+3.	duration	227475.493064
+4.	usd_goal_real	183247.092781
+5.	avg_success_rate_duration	79535.630888
+6.	name_words	79464.149268
+7.	launched_year	70389.641850
+8.	name_len	59306.375015
+9.	goal	49782.070504
+10.	country	44977.135745
+11.	main_category	44118.396859
+12.	participants_qtr	31245.759655
+13.	avg_ppb_goal	27836.024058
+14.	launched_week	22932.222815
+15.	mean_goal_year	16445.190139 
 
 ## Contents of the repository
 The [file](https://github.com/srishtis/Kaggle-Kickstarter-Project-Status-Prediction/blob/master/kickstarter_project_predictions_%20final_version_0109.ipynb) 'kickstarter_project_predictions_final_version_0109.ipynb' contains the first iteration with best accuracy of 68.9%.
