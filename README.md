@@ -109,7 +109,7 @@ Although I tried ensembling models in the second iteration using a normal averag
 ### What are the additional steps followed in the third iteration?
 Additional features were created around duration and number of participants. These features only improved the accuracy by 0.3% to 69.5%.
 
-I tried to execute the Randomized Grid Sarch on XGBoost but stopped it due to the run time. I tried tweaking parameters (learning_rate, n_estimators and max_depth) manually but it did not make anychange to the model performance
+I tried to execute the Randomized Search on XGBoost but stopped it due to the run time. I tried tweaking parameters (learning_rate, n_estimators and max_depth) manually but it did not make anychange to the model performance
 
 I then executed the LGBM in 2 different ways:
 
